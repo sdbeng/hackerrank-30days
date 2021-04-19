@@ -24,8 +24,17 @@ int main(){
     int n;
     cin >> n;
     //check if it's even or odd
-    if(n % 2 == 0){
-        cout << "the number is even, not weird" << "\n";
+    if(n % 2 != 0){
+        cout << "the number is odd, Weird" << "\n";
     }
-
+    else if(n % 2 == 0){
+        if(n >= 2 && n <= 5){
+            cout << "Range 2-5 inclusive, Not Weird";
+        }
+        else if(n >= 6 && n <= 20){
+            cout << "Range 6-20, Weird";
+        }else if(n > 20){
+            cout << "greate than 20, Not Weird";
+        }
+    }
 }
